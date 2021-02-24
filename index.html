@@ -4,14 +4,18 @@
 <head>
 	<title>Ataturk Quotes</title>
 	<meta charset="UTF-8" />
+    <link rel="stylesheet" href="style/styles.css">
 </head>
 
 <body>
+    
     <script src="index.js"></script>
 	<div>
         <h1>Ataturk Quotes</h1>
-        <button type="button" onclick=`${fetchQuoteEng()}`>English</button>
-        <button type="button" onclick=`${fetchQuoteTr()}`>Turkish</button>
+        <div class="btn-group">
+            <button class="btn-1" type="button" onclick=`${fetchQuoteEng()}`>English</button>
+            <button class="btn-2" type="button" onclick=`${fetchQuoteTr()}`>Turkish</button>
+        </div>
         <pre id="quotes"></pre>
     </div>
 
